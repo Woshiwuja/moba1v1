@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     
     [field: SerializeField] private SampleScriptableObject Champion;
     ParticleSystem particleS;
-    Vector3 mousePos;
+    public Vector3 mousePos;
         // Start is called before the first frame update
     void Start()
     {
