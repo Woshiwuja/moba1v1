@@ -2,15 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.InputSystem;
+
 public class PlayerMovement : MonoBehaviour
 {
     NavMeshAgent agent;
     
     [field: SerializeField] private SampleScriptableObject Champion;
-    // Start is called before the first frame update
+    ParticleSystem particleS;
+    Vector3 mousePos;
+        // Start is called before the first frame update
     void Start()
     {
-        
+        mousePos = Mouse.current.position.ReadValue();
+        particleS = GetComponent<ParticleSystem>();
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.speed = Champion.MovementSpeed;
@@ -18,19 +23,26 @@ public class PlayerMovement : MonoBehaviour
         int HealthPoints = Champion.HealthPoints;
         //Debug.Log(HealthPoints); working
         int ManaPoints = Champion.ManaPoints;
-        Debug.Log(Name);
+        Debug.Log(mousePos);
         Debug.Log(agent.speed);
     
     }
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) {
-            RaycastHit hit;  
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100)) {
-            transform.LookAt(hit.point);
+        OnMove();
+    }
+    void OnMove()
+    {
+        RaycastHit hit;
+        mousePos = Mouse.current.position.ReadValue();
+        if(Mouse.current.rightButton.wasPressedThisFrame)
+        {
+            Physics.Raycast(Camera.main.ScreenPointToRay(mousePos), out hit, Mathf.Infinity);
+            Vector3 LookPosition = new Vector3(hit.point.x,this.transform.position.y, hit.point.z);
+            transform.LookAt(LookPosition);
             agent.destination = hit.point;
-            }
-        }        
+        }
+        //TODO SET STATUS TO MOVING
     }
 }

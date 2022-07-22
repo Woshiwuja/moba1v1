@@ -111,7 +111,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
--define:ENABLE_LEGACY_INPUT_MANAGER
+-define:ENABLE_INPUT_SYSTEM
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"/home/federico/My project/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
@@ -320,6 +320,7 @@
 -r:"/home/federico/Unity/Hub/Editor/2021.3.6f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlSerializer.dll"
 -r:"/home/federico/Unity/Hub/Editor/2021.3.6f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
+-r:"Library/Bee/artifacts/2400b0aE.dag/Unity.InputSystem.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/Unity.Rider.Editor.ref.dll"
@@ -345,8 +346,30 @@
 -r:"Library/Bee/artifacts/2400b0aE.dag/Unity.VisualStudio.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Scripts/CameraFollow.cs"
+"Assets/Scripts/ChampionScripts/UnityChanSkills.cs"
+"Assets/Scripts/DashSkill.cs"
+"Assets/Scripts/Level.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/SampleScriptableObject.cs"
+"Assets/Scripts/Skill.cs"
+"Assets/SmartTimersManager/ScriptExamples/BlueLightFlicker.cs"
+"Assets/SmartTimersManager/ScriptExamples/RedLightFlicker.cs"
+"Assets/SmartTimersManager/TimerManager/GUI_TimersList.cs"
+"Assets/SmartTimersManager/TimerManager/Timer.cs"
+"Assets/SmartTimersManager/TimerManager/TimersManager.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/AutoBlink.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/CameraController.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/FaceUpdate.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/IKCtrlRightHand.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/IdleChanger.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/RandomWind.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/SpringBone.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/SpringCollider.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/SpringManager.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/ThirdPersonCamera.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/UnityChanControlScriptWithRgidBody.cs"
+"Assets/unity-chan!/Unity-chan! Model/SplashScreen/Scripts/SplashScreen.cs"
 -langversion:9.0
 
 /deterministic

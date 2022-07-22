@@ -16,11 +16,6 @@ public class SampleScriptableObject : ScriptableObject
     public float ArmorPenetration = 0f;
     public float MagicPenetration = 0f;
     
-    struct Skill
-    {
-        int ManaCost;
-        float Cooldown;
-    }
     public void Awake()
     {
 
