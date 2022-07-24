@@ -22,5 +22,6 @@ MonoBehaviour:
   - 10
   - 10
   skillLevel: 0
-  range: 
-  speed: 
+  range: 3
+  speed: 1000
+  dashTime: 0
